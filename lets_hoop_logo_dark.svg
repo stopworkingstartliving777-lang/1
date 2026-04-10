@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 265">
+  <defs>
+
+    <radialGradient id="ballGrad" cx="34%" cy="28%" r="72%">
+      <stop offset="0%"   stop-color="#FFCA72"/>
+      <stop offset="38%"  stop-color="#F07020"/>
+      <stop offset="100%" stop-color="#8E2400"/>
+    </radialGradient>
+    <radialGradient id="ballSpec" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="rgba(255,255,255,0.52)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </radialGradient>
+    <clipPath id="ballClip">
+      <circle cx="167" cy="185" r="57"/>
+    </clipPath>
+    <clipPath id="netClip">
+      <circle cx="293" cy="185" r="52"/>
+    </clipPath>
+
+  </defs>
+
+  <!-- Dark background (rounded for card/asset use; remove rx for edge-to-edge) -->
+  <rect width="450" height="265" rx="18" fill="#111111"/>
+
+  <!-- LET'S -->
+  <text
+    x="222" y="85"
+    font-family="Impact, 'Arial Black', 'Helvetica Neue', sans-serif"
+    font-size="90" font-style="italic" fill="#FFFFFF"
+    text-anchor="middle" letter-spacing="16">LET'S</text>
+
+  <!-- H -->
+  <text
+    x="16" y="245"
+    font-family="Impact, 'Arial Black', 'Helvetica Neue', sans-serif"
+    font-size="162" font-style="italic" fill="#FFFFFF">H</text>
+
+  <!-- BASKETBALL -->
+  <circle cx="167" cy="185" r="59" fill="url(#ballGrad)"/>
+  <g clip-path="url(#ballClip)" fill="none" stroke="#9A3800" stroke-width="3.2" stroke-linecap="round">
+    <path d="M 108,185 Q 167,163 226,185"/>
+    <path d="M 108,185 Q 167,207 226,185"/>
+    <path d="M 167,126 Q 147,185 167,244"/>
+    <path d="M 167,126 Q 187,185 167,244"/>
+  </g>
+  <ellipse cx="150" cy="162" rx="21" ry="14"
+    fill="url(#ballSpec)" transform="rotate(-28 150 162)"/>
+  <circle cx="167" cy="185" r="59" fill="none" stroke="#9A3800" stroke-width="2.5"/>
+
+  <!-- HOOP + NET -->
+  <g clip-path="url(#netClip)" fill="none" stroke="#CCCCCC" stroke-width="1.9" stroke-linecap="round">
+    <line x1="257" y1="118" x2="271" y2="242"/>
+    <line x1="266" y1="118" x2="275" y2="242"/>
+    <line x1="275" y1="118" x2="279" y2="242"/>
+    <line x1="284" y1="118" x2="283" y2="242"/>
+    <line x1="293" y1="118" x2="287" y2="242"/>
+    <line x1="302" y1="118" x2="291" y2="242"/>
+    <line x1="311" y1="118" x2="295" y2="242"/>
+    <line x1="320" y1="118" x2="299" y2="242"/>
+    <line x1="329" y1="118" x2="303" y2="242"/>
+    <path d="M 254,150 Q 293,158 332,150"/>
+    <path d="M 245,168 Q 293,176 341,168"/>
+    <path d="M 241,186 Q 293,194 345,186"/>
+    <path d="M 245,204 Q 293,212 341,204"/>
+    <path d="M 254,221 Q 293,229 332,221"/>
+  </g>
+  <!-- White rim ring on dark background -->
+  <circle cx="293" cy="185" r="59" fill="none" stroke="#FFFFFF" stroke-width="14"/>
+
+  <!-- P -->
+  <text
+    x="361" y="245"
+    font-family="Impact, 'Arial Black', 'Helvetica Neue', sans-serif"
+    font-size="162" font-style="italic" fill="#FFFFFF">P</text>
+
+</svg>

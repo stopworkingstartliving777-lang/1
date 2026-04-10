@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 265">
+  <defs>
+
+    <!-- White seam lines clipped to ball silhouette -->
+    <clipPath id="ballClip">
+      <circle cx="167" cy="185" r="57"/>
+    </clipPath>
+    <clipPath id="netClip">
+      <circle cx="293" cy="185" r="52"/>
+    </clipPath>
+
+  </defs>
+
+  <!-- Transparent / white background — works on light surfaces -->
+
+  <!-- LET'S -->
+  <text
+    x="222" y="85"
+    font-family="Impact, 'Arial Black', 'Helvetica Neue', sans-serif"
+    font-size="90" font-style="italic" fill="#111111"
+    text-anchor="middle" letter-spacing="16">LET'S</text>
+
+  <!-- H -->
+  <text
+    x="16" y="245"
+    font-family="Impact, 'Arial Black', 'Helvetica Neue', sans-serif"
+    font-size="162" font-style="italic" fill="#111111">H</text>
+
+  <!-- BASKETBALL — solid black ball, white seam lines -->
+  <circle cx="167" cy="185" r="59" fill="#111111"/>
+  <g clip-path="url(#ballClip)" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round">
+    <path d="M 108,185 Q 167,163 226,185"/>
+    <path d="M 108,185 Q 167,207 226,185"/>
+    <path d="M 167,126 Q 147,185 167,244"/>
+    <path d="M 167,126 Q 187,185 167,244"/>
+  </g>
+  <circle cx="167" cy="185" r="59" fill="none" stroke="#111111" stroke-width="2.5"/>
+
+  <!-- HOOP + NET — all black -->
+  <g clip-path="url(#netClip)" fill="none" stroke="#444444" stroke-width="1.9" stroke-linecap="round">
+    <line x1="257" y1="118" x2="271" y2="242"/>
+    <line x1="266" y1="118" x2="275" y2="242"/>
+    <line x1="275" y1="118" x2="279" y2="242"/>
+    <line x1="284" y1="118" x2="283" y2="242"/>
+    <line x1="293" y1="118" x2="287" y2="242"/>
+    <line x1="302" y1="118" x2="291" y2="242"/>
+    <line x1="311" y1="118" x2="295" y2="242"/>
+    <line x1="320" y1="118" x2="299" y2="242"/>
+    <line x1="329" y1="118" x2="303" y2="242"/>
+    <path d="M 254,150 Q 293,158 332,150"/>
+    <path d="M 245,168 Q 293,176 341,168"/>
+    <path d="M 241,186 Q 293,194 345,186"/>
+    <path d="M 245,204 Q 293,212 341,204"/>
+    <path d="M 254,221 Q 293,229 332,221"/>
+  </g>
+  <circle cx="293" cy="185" r="59" fill="none" stroke="#111111" stroke-width="14"/>
+
+  <!-- P -->
+  <text
+    x="361" y="245"
+    font-family="Impact, 'Arial Black', 'Helvetica Neue', sans-serif"
+    font-size="162" font-style="italic" fill="#111111">P</text>
+
+</svg>
