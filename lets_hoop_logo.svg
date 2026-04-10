@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 275" width="400" height="550">
+  <defs>
+    <!-- Radial gradient for basketball (light top-left, dark bottom-right) -->
+    <radialGradient id="ballGrad" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#FF9B3C"/>
+      <stop offset="100%" stop-color="#C94400"/>
+    </radialGradient>
+  </defs>
+
+  <!-- =====================================================
+       APP ICON VARIANT: uncomment for dark rounded background
+       <rect width="200" height="275" rx="44" fill="#111111"/>
+       ===================================================== -->
+
+  <!-- ===== NET ===== -->
+  <!-- Vertical net strings — converge inward from rim down to narrow bottom -->
+  <line x1="50"  y1="129" x2="82"  y2="194" stroke="#222" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="65"  y1="129" x2="87"  y2="194" stroke="#222" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="80"  y1="129" x2="91"  y2="194" stroke="#222" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="92"  y1="129" x2="95"  y2="194" stroke="#222" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="100" y1="129" x2="100" y2="194" stroke="#222" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="108" y1="129" x2="105" y2="194" stroke="#222" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="120" y1="129" x2="109" y2="194" stroke="#222" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="135" y1="129" x2="113" y2="194" stroke="#222" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="150" y1="129" x2="118" y2="194" stroke="#222" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Horizontal mesh lines — curved to suggest the cylindrical net shape -->
+  <path d="M 54,144 Q 100,151 146,144" fill="none" stroke="#222" stroke-width="1.8"/>
+  <path d="M 61,160 Q 100,167 139,160" fill="none" stroke="#222" stroke-width="1.8"/>
+  <path d="M 69,176 Q 100,182 131,176" fill="none" stroke="#222" stroke-width="1.8"/>
+  <!-- Net bottom closing edge -->
+  <path d="M 82,194 Q 100,199 118,194" fill="none" stroke="#222" stroke-width="1.8"/>
+
+  <!-- ===== RIM — back half (sits BEHIND the ball) ===== -->
+  <path d="M 48,129 A 52,9 0 0,1 152,129"
+    fill="none" stroke="#B84000" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- ===== BASKETBALL ===== -->
+  <!-- Main ball fill with radial gradient -->
+  <circle cx="100" cy="88" r="47" fill="url(#ballGrad)"/>
+  <!-- Ball outline -->
+  <circle cx="100" cy="88" r="47" fill="none" stroke="#1A1A1A" stroke-width="2"/>
+
+  <!-- Basketball seam lines -->
+  <!-- Horizontal seams (upper and lower arc of equatorial seam) -->
+  <path d="M 53,88 Q 100,71 147,88"  fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 53,88 Q 100,105 147,88" fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Vertical seams (left and right curve of meridian seam) -->
+  <path d="M 100,41 Q 84,88  100,135" fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 100,41 Q 116,88 100,135" fill="none" stroke="#1A1A1A" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- ===== RIM — front half (sits IN FRONT of the ball, creating through-the-hoop effect) ===== -->
+  <path d="M 48,129 A 52,9 0 0,0 152,129"
+    fill="none" stroke="#B84000" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- ===== WORDMARK ===== -->
+  <text x="100" y="225"
+    font-family="'Arial Black', Impact, 'Helvetica Neue', Arial, sans-serif"
+    font-size="26"
+    font-weight="900"
+    fill="#E05500"
+    text-anchor="middle"
+    letter-spacing="4">LET'S</text>
+
+  <text x="100" y="261"
+    font-family="'Arial Black', Impact, 'Helvetica Neue', Arial, sans-serif"
+    font-size="36"
+    font-weight="900"
+    fill="#1A1A1A"
+    text-anchor="middle"
+    letter-spacing="5">HOOP</text>
+</svg>
