@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 280">
+  <defs>
+    <clipPath id="b1c"><circle cx="67" cy="67" r="46"/></clipPath>
+    <clipPath id="b2c"><circle cx="169" cy="67" r="46"/></clipPath>
+  </defs>
+
+  <!-- White background -->
+  <rect width="236" height="280" fill="#FFFFFF"/>
+
+  <!-- ── BASKETBALL 1 (top-left hoop) — cx=67 cy=67 r=47 ──────── -->
+  <circle cx="67" cy="67" r="47" fill="#F07020"/>
+  <g clip-path="url(#b1c)" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round">
+    <path d="M 20,67 Q 67,46 114,67"/>
+    <path d="M 20,67 Q 67,88 114,67"/>
+    <path d="M 67,20 Q 47,67 67,114"/>
+    <path d="M 67,20 Q 87,67 67,114"/>
+  </g>
+  <circle cx="67" cy="67" r="47" fill="none" stroke="#1A1A1A" stroke-width="4.5"/>
+
+  <!-- ── BASKETBALL 2 (top-right hoop) — cx=169 cy=67 r=47 ────── -->
+  <circle cx="169" cy="67" r="47" fill="#F07020"/>
+  <g clip-path="url(#b2c)" fill="none" stroke="#1A1A1A" stroke-width="5" stroke-linecap="round">
+    <path d="M 122,67 Q 169,46 216,67"/>
+    <path d="M 122,67 Q 169,88 216,67"/>
+    <path d="M 169,20 Q 149,67 169,114"/>
+    <path d="M 169,20 Q 189,67 169,114"/>
+  </g>
+  <circle cx="169" cy="67" r="47" fill="none" stroke="#1A1A1A" stroke-width="4.5"/>
+
+  <!-- ── RIM — heavy bar connecting both hoops ─────────────────── -->
+  <line x1="20" y1="118" x2="216" y2="118"
+    stroke="#1A1A1A" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- ── GEOMETRIC DIAMOND NET MESH (tapered) ──────────────────── -->
+  <g fill="none" stroke="#1A1A1A" stroke-width="2.8" stroke-linejoin="round">
+
+    <!-- Row 0–1 -->
+    <path d="M 22,124 L 34,152 L 46,124 L 58,152 L 70,124 L 82,152
+             L 94,124 L 106,152 L 118,124 L 130,152 L 142,124 L 154,152
+             L 166,124 L 178,152 L 190,124 L 202,152 L 214,124"/>
+
+    <!-- Row 1–2 -->
+    <path d="M 34,152 L 46,180 L 58,152 L 70,180 L 82,152 L 94,180
+             L 106,152 L 118,180 L 130,152 L 142,180 L 154,152 L 166,180
+             L 178,152 L 190,180 L 202,152"/>
+
+    <!-- Row 2–3 -->
+    <path d="M 46,180 L 58,208 L 70,180 L 82,208 L 94,180 L 106,208
+             L 118,180 L 130,208 L 142,180 L 154,208 L 166,180 L 178,208
+             L 190,180"/>
+
+    <!-- Row 3–4 -->
+    <path d="M 58,208 L 70,236 L 82,208 L 94,236 L 106,208 L 118,236
+             L 130,208 L 142,236 L 154,208 L 166,236 L 178,208"/>
+
+    <!-- Row 4–5 (bottom) -->
+    <path d="M 70,236 L 82,264 L 94,236 L 106,264 L 118,236 L 130,264
+             L 142,236 L 154,264 L 166,236"/>
+
+  </g>
+
+</svg>
