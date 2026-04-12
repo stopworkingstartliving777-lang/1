@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540">
+  <defs>
+    <clipPath id="b1c"><circle cx="343" cy="244" r="56"/></clipPath>
+    <clipPath id="b2c"><circle cx="457" cy="244" r="56"/></clipPath>
+  </defs>
+
+  <!-- ================================================================
+       BACKBOARD STRUCTURE
+       ================================================================ -->
+
+  <!-- Main board outer frame -->
+  <rect x="130" y="18" width="540" height="330" rx="6" fill="#1A1A1A"/>
+
+  <!-- Left side wing bracket (stepped L-shape) -->
+  <path d="M 70,272 L 70,352 L 106,352 L 106,326 L 130,326 L 130,272 Z"
+    fill="#1A1A1A"/>
+
+  <!-- Right side wing bracket (mirror of left) -->
+  <path d="M 730,272 L 730,352 L 694,352 L 694,326 L 670,326 L 670,272 Z"
+    fill="#1A1A1A"/>
+
+  <!-- Bottom center mounting post (connects board to rim) -->
+  <rect x="372" y="348" width="56" height="62" fill="#1A1A1A"/>
+
+  <!-- White inner board surface -->
+  <rect x="155" y="42" width="490" height="282" fill="#FFFFFF"/>
+
+  <!-- ================================================================
+       LINE 1 — LETS  (tangerine orange, stretched to match HOOP width)
+       ================================================================ -->
+  <text
+    x="198" y="169"
+    font-family="Impact, 'Arial Black', 'Helvetica Neue', sans-serif"
+    font-size="155"
+    font-style="italic"
+    fill="#F07020"
+    textLength="404"
+    lengthAdjust="spacing">LETS</text>
+
+  <!-- ================================================================
+       LINE 2 — H [ball] [ball] P
+       Baseline y=300 | Cap height ≈113px | Cap top ≈ y=187
+       Ball cy=244, r=57 (fits cap-height zone 187–301)
+       ================================================================ -->
+
+  <!-- H -->
+  <text
+    x="198" y="300"
+    font-family="Impact, 'Arial Black', 'Helvetica Neue', sans-serif"
+    font-size="155"
+    font-style="italic"
+    fill="#1A1A1A">H</text>
+
+  <!-- ── BASKETBALL 1 (first O) — cx=343 cy=244 r=57 ───────────── -->
+  <circle cx="343" cy="244" r="57" fill="#F07020"/>
+  <g clip-path="url(#b1c)" fill="none" stroke="#1A1A1A"
+     stroke-width="4.5" stroke-linecap="round">
+    <!-- Equatorial seams -->
+    <path d="M 286,244 Q 343,221 400,244"/>
+    <path d="M 286,244 Q 343,267 400,244"/>
+    <!-- Meridional seams -->
+    <path d="M 343,187 Q 319,244 343,301"/>
+    <path d="M 343,187 Q 367,244 343,301"/>
+  </g>
+  <circle cx="343" cy="244" r="57" fill="none" stroke="#1A1A1A" stroke-width="4"/>
+
+  <!-- ── BASKETBALL 2 (second O) — cx=457 cy=244 r=57 ─────────── -->
+  <circle cx="457" cy="244" r="57" fill="#F07020"/>
+  <g clip-path="url(#b2c)" fill="none" stroke="#1A1A1A"
+     stroke-width="4.5" stroke-linecap="round">
+    <path d="M 400,244 Q 457,221 514,244"/>
+    <path d="M 400,244 Q 457,267 514,244"/>
+    <path d="M 457,187 Q 433,244 457,301"/>
+    <path d="M 457,187 Q 481,244 457,301"/>
+  </g>
+  <circle cx="457" cy="244" r="57" fill="none" stroke="#1A1A1A" stroke-width="4"/>
+
+  <!-- P -->
+  <text
+    x="524" y="300"
+    font-family="Impact, 'Arial Black', 'Helvetica Neue', sans-serif"
+    font-size="155"
+    font-style="italic"
+    fill="#1A1A1A">P</text>
+
+  <!-- ================================================================
+       GEOMETRIC DIAMOND NET MESH
+       13-point top row, spacing=24px, taper=12px/side/row, 4 zigzag rows
+       ================================================================ -->
+  <g fill="none" stroke="#1A1A1A" stroke-width="2.6" stroke-linejoin="round">
+
+    <!-- Row 0–1 (y=432 → y=456) -->
+    <path d="M 256,432 L 268,456 L 280,432 L 292,456 L 304,432 L 316,456
+             L 328,432 L 340,456 L 352,432 L 364,456 L 376,432 L 388,456
+             L 400,432 L 412,456 L 424,432 L 436,456 L 448,432 L 460,456
+             L 472,432 L 484,456 L 496,432 L 508,456 L 520,432 L 532,456
+             L 544,432"/>
+
+    <!-- Row 1–2 (y=456 → y=480) -->
+    <path d="M 268,456 L 280,480 L 292,456 L 304,480 L 316,456 L 328,480
+             L 340,456 L 352,480 L 364,456 L 376,480 L 388,456 L 400,480
+             L 412,456 L 424,480 L 436,456 L 448,480 L 460,456 L 472,480
+             L 484,456 L 496,480 L 508,456 L 520,480 L 532,456"/>
+
+    <!-- Row 2–3 (y=480 → y=504) -->
+    <path d="M 280,480 L 292,504 L 304,480 L 316,504 L 328,480 L 340,504
+             L 352,480 L 364,504 L 376,480 L 388,504 L 400,480 L 412,504
+             L 424,480 L 436,504 L 448,480 L 460,504 L 472,480 L 484,504
+             L 496,480 L 508,504 L 520,480"/>
+
+    <!-- Row 3–4 (y=504 → y=528, bottom) -->
+    <path d="M 292,504 L 304,528 L 316,504 L 328,528 L 340,504 L 352,528
+             L 364,504 L 376,528 L 388,504 L 400,528 L 412,504 L 424,528
+             L 436,504 L 448,528 L 460,504 L 472,528 L 484,504 L 496,528
+             L 508,504"/>
+
+  </g>
+
+  <!-- ================================================================
+       RIM — drawn on top of net so it appears in front
+       cx=400, cy=420, rx=158, ry=16, stroke-width=22
+       ================================================================ -->
+  <ellipse cx="400" cy="420" rx="158" ry="16"
+    fill="none" stroke="#1A1A1A" stroke-width="22"/>
+
+</svg>
